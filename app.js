@@ -35,7 +35,7 @@ setInterval(() => {
 }, 1000);
 
 const dbPromise = idb.open('cookie-clicker', 1, upgradeDB => {
-  upgradeDB.createObjectStore('bakery', { keyPath: 'id' });
+  const bakeryStore = upgradeDB.createObjectStore('bakery', { keyPath: 'id' });
 });
 
 const saveBakery = () => {
