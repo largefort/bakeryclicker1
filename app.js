@@ -69,4 +69,4 @@ dbPromise.then(() => {
 
 setInterval(() => {
   saveBakery();
-}, 5000);
+}, 10);
