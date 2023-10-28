@@ -63,7 +63,9 @@ const loadBakery = () => {
   });
 };
 
-loadBakery();
+dbPromise.then(() => {
+  loadBakery();
+});
 
 setInterval(() => {
   saveBakery();
